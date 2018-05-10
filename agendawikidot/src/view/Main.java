@@ -26,11 +26,7 @@ public class Main extends JFrame{
 
 			private ButtonGroup group = new ButtonGroup();
 
-		public static void main(String[] args) {
-			//chama o método que constrói a janela principal do programa.
-			Main m = new Main(); 
 
-		}
 
 		public Main(){ //método constructor, que monta a janela principal do programa
 			super("TRABALHO SOBRE INTERFACE GRÁFICA");
@@ -45,11 +41,11 @@ public class Main extends JFrame{
 						super.paintComponents(g);
 						Image img = ImageIO.read(new java.net.URL(
 
-								this.getClass().getResource("imagens/DESKTOP.gif"), "DESKTOP.gif"));
+								this.getClass().getResource("imagens/DESKTOP.jpg"), "DESKTOP.jpg"));
 						
 						if (img != null) {
 
-							g.drawImage(img, 0, 0, 800, 600, this);
+							g.drawImage(img, 0, 0, 585, 329, this);
 						}
 					}
 						catch(Exception e){
@@ -63,16 +59,12 @@ public class Main extends JFrame{
 		desktop.setBackground(Color.WHITE);
 
 		//seta os ícones dos menus
-		menuAgenda.setIcon(new 
-				ImageIcon(this.getClass().getResource("imagens/AGENDA2.png")));
+		//menuAgenda.setIcon(new ImageIcon(this.getClass().getResource("imagens/AGENDA2.png")));
 
-		menuAbreAgenda.setIcon(new
-				ImageIcon(this.getClass().getResource("imagens/AGENDA.png")));
+		menuAbreAgenda.setIcon(new ImageIcon(this.getClass().getResource("imagens/AGENDA.png")));
 
 
-		menuEstilo.setIcon(new
-
-				ImageIcon(this.getClass().getResource("imagens/ESTILO.png")));
+		menuEstilo.setIcon(new ImageIcon(this.getClass().getResource("imagens/ESTILO.png")));
 
 		//evento do botao do menu Abrir Agenda
 		menuAbreAgenda.addActionListener(new ActionListener(){
@@ -193,5 +185,11 @@ public class Main extends JFrame{
 			catch(Exception e) {
 				e.printStackTrace();
 			}
+		}
+		
+		public static void main(String[] args) {
+			//chama o método que constrói a janela principal do programa.
+			Main m = new Main(); 
+
 		}
 	}

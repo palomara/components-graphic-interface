@@ -110,7 +110,7 @@ import javax.swing.*;
 
 			if (edicao == false){
 				//sendo falso é porque é novo "Inclusão",
-				resposta = JOptionPane.showConfirmDialog(this, "Incluir Registro?",
+				resposta = JOptionPane.showConfirmDialog(this, "Incluir Registro?", "Novo",
 				JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE); 
 				if (resposta == JOptionPane.OK_OPTION){
 					//fazendo a inclusão do contato na agenda
