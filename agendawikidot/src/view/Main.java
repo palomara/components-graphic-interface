@@ -45,7 +45,7 @@ public class Main extends JFrame{
 						
 						if (img != null) {
 
-							g.drawImage(img, 0, 0, 585, 329, this);
+							g.drawImage(img, 0, 0, 1200, 800, this);
 						}
 					}
 						catch(Exception e){
@@ -59,7 +59,7 @@ public class Main extends JFrame{
 		desktop.setBackground(Color.WHITE);
 
 		//seta os ícones dos menus
-		//menuAgenda.setIcon(new ImageIcon(this.getClass().getResource("imagens/AGENDA2.png")));
+		menuAgenda.setIcon(new ImageIcon(this.getClass().getResource("imagens/AGENDA2.png")));
 
 		menuAbreAgenda.setIcon(new ImageIcon(this.getClass().getResource("imagens/AGENDA.png")));
 
